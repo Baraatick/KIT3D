@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.Registration_body {
+  width: 100%;
+  height: 100vh;
+  background-color: #757575;
+}
+
+.main_block {
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 559px;
+  height: 569px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.block_text {
+  color: black;
+  font-family: "Inter", sans-serif;
+  padding-top: 40px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.content_container {
+  width: 85%;
+  margin: 40px auto;
+}
+
+.input_email {
+  background: url(../../../assets/logo/email.png) 5px 2px no-repeat;
+  padding: 5px 13px 13px 13px;
+  padding-left: 46px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.input_name {
+  background: url(../../../assets/logo/lock.png) 5px 2px no-repeat;
+  padding: 13px;
+  padding-left: 46px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.input_email:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.input_password {
+  background: url(../../../assets/logo/lock.png) 5px 2px no-repeat;
+  padding: 7px 13px 13px 13px;
+  padding-left: 46px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.input_email::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.input_password::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.chekbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.chekbox a {
+  font-family: "Inter", sans-serif;
+  color: #7b7b7b;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.labels {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.button {
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  height: 66px;
+  border: 0;
+  background: #ff6633;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: color 0.4s linear;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #fc8962;
+  transition: 0.5s;
+}
+
+.text1 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
+}
+.text1 span a {
+  color: #7b7b7b;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .block {
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  
+}
+
+@media (max-width: 470px) {
+  .labels {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .chekbox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .input_email {
+    /* background: url(email.png) 5px 2px no-repeat; */
+    padding: 13px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .input_password {
+    /* background: url(lock.png) 5px 2px no-repeat; */
+    padding: 13px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .extra_password {
+    width: 150px;
+  }
+
+  .input_email {
+    background: none;
+  }
+
+  .input_password {
+    background: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .extra_password {
+    font-size: 10px;
+    width: 30%;
+  }
+}

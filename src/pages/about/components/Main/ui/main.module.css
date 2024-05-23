@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.content {
+  width: 100%;
+  height: 30%;
+  position: relative;
+}
+.photo {
+  position: relative;
+  width: 100%;
+}
+.blured {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 99%;
+  backdrop-filter: blur(1px);
+}
+.text {
+  position: absolute;
+  font-family: montserrat;
+  width: 100%;
+  font-size: 62px;
+  top: 42%;
+  color: rgba(255, 255, 255, 0.889);
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  left: 0%;
+}
+.info {
+  width: 100%;
+  transition: left 0.5s, top 0.5s ease;
+}
+
+.info_container {
+  padding-top: 120px;
+  padding-left: 100px;
+  width: 27%;
+}
+.infotext {
+  position: absolute;
+  font-family: montserrat;
+  font-size: 35px;
+  top: 50px;
+  left: 258px;
+  color: rgb(128, 127, 127);
+  width: 200px;
+  transition: left 0.5s, top 0.5s ease;
+  bottom: 30px;
+}
+.maptext {
+  position: absolute;
+  font-family: montserrat;
+  font-size: 35px;
+  top: 50px;
+  left: 60.5%;
+  color: rgb(128, 127, 127);
+  width: 250px;
+  transition: left 0.5s, top 0.5s ease;
+}
+.mappos {
+  position: absolute;
+  left: 53%;
+  width: 35%;
+  top: 125px;
+  transition: left 0.5s, top 0.5s ease;
+}
+.map {
+  position: relative;
+  outline: 1px solid #b4b4b4;
+  border: none;
+  margin: 0px auto;
+  border-radius: 10px;
+  width: 100%;
+  height: 450px;
+}
+
+
+@media (max-width: 979px) {
+  .info_container {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 982px) {
+  .text {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .info_container{
+    width: 30%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .maptext {
+    left: 60.5%;
+  }
+}
+
+@media (max-width: 1100px){
+  .info_container{
+    width: 35%;
+  }
+}
+@media (max-width: 900px) {
+  .maptext {
+    left: 56.5%;
+  }
+  .info_container{
+    width: 45%;
+  }
+}
+
+@media (max-width: 677px) {
+  .infotext {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    height: 1000px;
+  }
+  .maptext {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    left: 27%;
+  }
+  .mappos {
+    position: relative;
+    left: 5%;
+    width: 90%;
+  }
+  .info {
+    position: relative;
+    top: 50px;
+  }
+
+  .info_container {
+    width: 55%;
+    padding: 0 0 0 50px;
+    margin-left: 100px;
+  }
+  .infotext {
+    position: relative;
+    left: 45%;
+    top: 27px;
+  }
+  .text {
+    width: 100%;
+    font-size: 41px;
+    top: 41%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .infotext {
+    position: relative;
+    left: 45%;
+  }
+  .info {
+    position: relative;
+    top: 50px;
+  }
+  .info_container {
+    width: 65%;
+    padding: 0;
+    margin-left: 20px;
+  }
+  .maptext {
+    position: relative;
+    top: 90px;
+    margin-left: 5%;
+    text-align: center;
+  }
+  .mappos {
+    position: relative;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 422px) {
+  .maptest {
+    left: 9%;
+  }
+}
+
+@media (max-width: 400px) {
+  .infotext {
+    position: relative;
+    left: 43%;
+  }
+  .info {
+    position: relative;
+    top: 50px;
+  }
+  .maptext {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .map_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .mappos {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+  .aboutus__wrapper{
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 395px) {
+  .maptext {
+    left: 9%;
+  }
+}
+
+@media (max-width: 408px) {
+  .info {
+  }
+}
+
+@media (max-width: 482px) {
+  .text {
+    font-size: 30px;
+  }
+
+  .maptext {
+    left: 12%;
+  }
+}

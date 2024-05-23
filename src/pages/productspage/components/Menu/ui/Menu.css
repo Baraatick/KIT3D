@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.Menu {
+  max-width: 100vw;
+  height: 480px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../../../../assets/photos/kitentry1.jpg);
+}
+
+.container {
+  width: 90vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Menu__welcome {
+  font-size: 35px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 40px auto;
+}
+
+.Menu__info {
+  font-weight: 400;
+  font-size: 25px;
+  color: white;
+  font-family: montserrat;
+}
+
+.Menu__btn {
+  cursor: pointer;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid white;
+  width: 100px;
+  height: 50px;
+  background: none;
+  margin: 20px auto;
+  transition: 0.5s;
+}
+.Menu__btn:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width:1000px){
+  .container{
+    width: 100vw;
+  }
+  .cards{
+    gap: 50px;
+  }
+  .cards{
+    grid-template-columns: repeat(3,1fr);
+    gap: 70px;
+    padding: 40px;
+  }
+  
+  .Menu__info {
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    font-family: montserrat;
+    text-align: center;
+  }
+}
+
+@media (max-width:700px){
+  .cards{
+    grid-template-columns: repeat(2,1fr);
+    gap: 70px;
+  }
+
+  .Menu__info {
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    font-family: montserrat;
+    text-align: center;
+  }
+}
+
+@media (max-width:470px){
+  .menu__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+}
